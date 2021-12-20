@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>person</title>
+</head>
+<body>
+ 
+ 
+ 
+ 
+ <script>
+
+        class person{
+            constructor(name,Age,DOB,phonenumber,Height,Weight,gender,District, Pincode, State, Nationality){
+                this.name=name;
+                this.Age=Age;
+                this.DOB=DOB;
+                this.number=phonenumber;
+                this.Height=Height;
+                this.Weight=Weight;
+                this.gender=gender;
+                this.District=District;
+                this.Pincode=Pincode;
+                this.State=State;
+                this.Nationality=Nationality;
+
+            }
+            
+        }
+        var detail=new person("Harish",23,"22-07-1998","6367181245","173cm",49,"Male","Namakkal",637410,"Tamilnadu","India");
+        console.log(detail);
+
+        class uberPrice{
+            constructor(price,quantity){
+                this.price=price;
+                this.quantity=quantity;
+            }
+                get total(){
+                   return this.price * this.quantity;
+                }
+        }
+
+        let p=new uberPrice(200,2)
+        console.log(p.total);
+    </script>
+</body>
+</html>
